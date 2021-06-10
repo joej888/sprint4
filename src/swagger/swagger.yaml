@@ -31,7 +31,7 @@ paths:
         200:
           description: Success
           schema:
-            $ref: "#/definitions/CallPrevetting-Model"
+            $ref: "#/definitions/DealersProductOffering"
         400:
           description: Missing required input parameter
         401:
@@ -45,16 +45,59 @@ paths:
 
 # complex objects have schema definitions
 definitions:
-  CallPrevetting-Model:
+  DealersProductOffering:
     type: object
     properties:
-      partyCharacteristic:
+      messages:
+        type: array
+        items:
+          type: string
+      result:
         type: array
         items:
           type: object
           properties:
-            name:
+            dealsheetNumber:
               type: string
-            value:
+            dealDescription:
               type: string
-
+            dealType:
+              type: string
+            numberOfAccessory:
+              type: string
+            packageCode:
+              type: string
+            pricePlan:
+              type: string
+            tarriffDescription:
+              type: string
+            addDate:
+              type: string
+            fromDate:
+              type: string
+            toDate:
+              type: string
+            contractMonths:
+              type: string
+            numberOfPhones:
+              type: string
+            financedHandset:
+              type: string
+            stockCode:
+              type: string
+            device:
+              type: string
+            secondaryProductCode:
+              type: string
+            handsetInstallment:
+              type: string
+            subscriptionValue:
+              type: string
+            dealValue:
+              type: string
+            groupId:
+              type: string
+            channel:
+              type: string
+            cashPayIn:
+              type: string
