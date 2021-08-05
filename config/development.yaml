@@ -11,7 +11,7 @@ sentry:
 
 vod-npm-auth:
   authorization-loader:
-    uri: http://vod-ms-swagger-combined.qa.cloud.vodacom.corp/vod-ms-authorization-loader/restricted-cluster-only-services
+    uri: http://vod-ms-swagger-combined.qa.nonprod.vodacom.co.za/vod-ms-authorization-loader/restricted-cluster-only-services
   publicKey: |
     -----BEGIN PUBLIC KEY-----
     MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmq9A/mM8B+gjfeyczxdj
@@ -22,4 +22,4 @@ vod-npm-auth:
     S79pgmVilaDA+lLxniqGc8KP7GpBMBkXCS7A7N3TYIVxUrA2Q5qKTi0HZ7JQgC+p
     jQIDAQAB
     -----END PUBLIC KEY-----
-  contextUrl: 'http://vod-ms-swagger-combined.qa.cloud.vodacom.corp/vod-ms-context'
+  contextUrl: 'http://vod-ms-swagger-combined.qa.nonprod.vodacom.co.za/vod-ms-context'

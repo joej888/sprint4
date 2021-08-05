@@ -8,6 +8,11 @@ schemes:
   # tip: remove http to make production-grade
   - http
   - https
+securityDefinitions:
+  Bearer:
+    type: apiKey
+    in: header
+    name: Authorization
 # format of bodies a client can send (Content-Type)
 consumes:
   - application/json
@@ -20,6 +25,8 @@ paths:
       tags:
         - "Product Offering"
       operationId: getDealersProductOffering
+      security:
+        - Bearer: []
       consumes:
         - application/json
       parameters:
