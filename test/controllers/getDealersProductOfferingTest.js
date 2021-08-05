@@ -49,7 +49,7 @@ describe('Get Dealers Product Offering', function () {
 
   it('returns expected response when ok is true', async () => {
     req.query = {
-      dealerId: 'VWOR1'
+      dealerId: '59606'
     };
     const expectedParams = {
       headers: req.headers,

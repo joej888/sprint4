@@ -24,9 +24,57 @@ paths:
         - application/json
       parameters:
         - in: query
+          name: accessory
+          type: string
+          required: false
+        - in: query
+          name: accountDealFlag
+          type: string
+          required: false
+        - in: query
+          name: dealType
+          type: string
+          required: false
+        - in: query
+          name: dealValueUpperLimit
+          type: string
+          required: false
+        - in: query
           name: dealerId
           type: string
           required: true
+        - in: query
+          name: dealsheetNumber
+          type: string
+          required: false
+        - in: query
+          name: device
+          type: string
+          required: false
+        - in: query
+          name: deviceManufacturer
+          type: string
+          required: false
+        - in: query
+          name: financedThresholdAmount
+          type: string
+          required: false
+        - in: query
+          name: packageCodes
+          type: string
+          required: false
+        - in: query
+          name: pricePlan
+          type: string
+          required: false
+        - in: query
+          name: simOnly
+          type: string
+          required: false
+        - in: query
+          name: stockCode
+          type: string
+          required: false
       responses:
         200:
           description: Success
@@ -78,9 +126,9 @@ definitions:
             toDate:
               type: string
             contractMonths:
-              type: string
+              type: number
             numberOfPhones:
-              type: string
+              type: number
             financedHandset:
               type: string
             stockCode:
@@ -88,16 +136,20 @@ definitions:
             device:
               type: string
             secondaryProductCode:
-              type: string
+              type: number
             handsetInstallment:
-              type: string
+              type: number
             subscriptionValue:
-              type: string
+              type: number
             dealValue:
-              type: string
+              type: number
             groupId:
               type: string
             channel:
               type: string
             cashPayIn:
-              type: string
+              type: number
+      successful:
+          type: string
+      code:
+          type: number
